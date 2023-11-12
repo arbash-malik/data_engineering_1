@@ -32,6 +32,7 @@ The dataset had .asc file types, and more than a million rows (five years of ban
   I transformed almost all of the column names to better represent the information they contain, as well as added more transformed columns that can be used for further analysis such as `account_age`,`balance_before`,`overall_loan_amount_due`. 
   And create a denormalized database structure that combines all of the columns in the database. A trigger was also created to make sure any insertions in the data would update the analytical layer. 
   A trigger log table was also created that gives you the new `account_id` and the `timestamp` of the update.
+  I also created some stored procedures for quick recall of data.
 
 # 4. Data Marts as Views
   I created 4 Data Marts
